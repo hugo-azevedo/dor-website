@@ -5,10 +5,11 @@
     --spacing: 0.5em;
     /* --color-accent: #ffb633; */
     --color-accent: #cf6520;
-    --color-accent-secondary: #07b8b1;
+    /* --color-accent-secondary: #07b8b1; */
+    --color-accent-secondary: #0DAB76;
     --color-bg: #121212;
     --transition-duration: 0.15s;
-    --color-fg: #eee;
+    --color-fg: #917c5d; /* #eee; */
 
     --color-grey: #222;
     --color-grey-alpha-80: rgb(from var(--color-grey) r g b / 0.8);
@@ -241,7 +242,7 @@ a {
 
 .link-to-top {
     align-items: center;
-    background: var(--color-accent);
+    background: var(--color-fg);
     border-radius: 50%;
     bottom: 1em;
     color: var(--color-bg);
@@ -326,8 +327,8 @@ a {
     & .logo {
         display: flex;
         flex-shrink: 1;
-        height: 2em;
-        max-width: calc(100% - 5em);
+        height: 60px;
+        max-width: calc(100%);
         transition: transform var(--transition-duration);
 
         &:hover {
@@ -571,8 +572,13 @@ a {
         }
 
         & a {
-            display: block;
+            display: inline;
         }
+    }
+
+    .courtesy {
+        font-size: small;
+        opacity: 60%;
     }
 }
 
