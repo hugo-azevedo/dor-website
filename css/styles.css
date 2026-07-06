@@ -263,7 +263,7 @@ a {
 
 .link-to-top {
     align-items: center;
-    background: var(--color-fg);
+    background: var(--color-accent);
     border-radius: 50%;
     bottom: 1em;
     color: var(--color-bg1);
@@ -286,10 +286,10 @@ a {
     }
 
     &:hover {
-        background: rgb(from var(--color-fg) r g b / 50%);
+        background: rgb(from var(--color-bg1) r g b / 50%);
         
         & .icon-svg {
-            color: var(--color-fg);
+            color: var(--color-accent);
         }
     }
 
