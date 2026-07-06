@@ -708,7 +708,8 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: var(--spacing);
+    gap: calc(var(--spacing) * 6);
+    padding: 0 calc(var(--spacing) * 4);
 }
 
 /* EPK */
