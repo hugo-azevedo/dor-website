@@ -815,12 +815,12 @@ a {
 
 .ribbon-on-spotify {
     /* inset: calc(-1*var(--f)) var(--t) auto auto; */
-    --t: calc(var(--spacing) * 13 ); /* the top offset */
+    --t: calc(var(--spacing) * 53 ); /* the top offset */
     font-size: 0.75em;
 
     &.adam-ribbon {
         background: var(--color-accent);
-        --t: calc(var(--spacing) * 9 ); /* the top offset */
+        --t: calc(var(--spacing) * 49 ); /* the top offset */
     }
 }
 
@@ -835,6 +835,24 @@ a {
 @media (max-width: 40em) {
     .container-audio {
         aspect-ratio: 1/1;
+    }
+
+    .ribbon {
+        --t: calc(var(--spacing) * 1.5 ); /* the top offset */
+    }
+    
+    .new-vocalist {
+        font-size: 1em;
+    }
+
+    .ribbon-on-spotify {
+        --t: calc(var(--spacing) * 68 ); /* the top offset */
+        font-size: 0.75em;
+
+        &.adam-ribbon {
+            background: var(--color-accent);
+            --t: calc(var(--spacing) * 64 ); /* the top offset */
+        }
     }
 }
 
@@ -898,6 +916,16 @@ a {
 
         & .icon-close {
             display: none;
+        }
+    }
+
+    .ribbon-on-spotify {
+        --t: calc(var(--spacing) * 64 ); /* the top offset */
+        font-size: 0.75em;
+
+        &.adam-ribbon {
+            background: var(--color-accent);
+            --t: calc(var(--spacing) * 60 ); /* the top offset */
         }
     }
 }
