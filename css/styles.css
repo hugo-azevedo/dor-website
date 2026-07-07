@@ -701,6 +701,7 @@ a {
     aspect-ratio: 5/2;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .container-video {
@@ -792,7 +793,6 @@ a {
 
 .spotify-ribbon-wrapper {
     position: relative;
-    height: 2em;
 }
 
 .ribbon {
@@ -846,12 +846,12 @@ a {
     }
 
     .ribbon-on-spotify {
-        --t: calc(var(--spacing) * 68 ); /* the top offset */
+        --t: calc(var(--spacing) * 75 ); /* the top offset */
         font-size: 0.75em;
 
         &.adam-ribbon {
             background: var(--color-accent);
-            --t: calc(var(--spacing) * 64 ); /* the top offset */
+            --t: calc(var(--spacing) * 68 ); /* the top offset */
         }
     }
 }
@@ -919,13 +919,18 @@ a {
         }
     }
 
+    .new-vocalist {
+        font-size: 1em;
+        font-weight: var(--font-weight-subheader);
+        
+    }
+
     .ribbon-on-spotify {
-        --t: calc(var(--spacing) * 64 ); /* the top offset */
+        --t: calc(var(--spacing) * 68 ); /* the top offset */
         font-size: 0.75em;
 
         &.adam-ribbon {
-            background: var(--color-accent);
-            --t: calc(var(--spacing) * 60 ); /* the top offset */
+            --t: calc(var(--spacing) * 62 ); /* the top offset */
         }
     }
 }
