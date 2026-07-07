@@ -797,7 +797,7 @@ a {
 
     .nav-main {
         align-items: flex-end;
-        background: var(--dor-grey);
+        background: var(--dor-darkgrey);
         box-sizing: border-box;
         flex-direction: column;
         font-size: 1.25em;
@@ -827,10 +827,12 @@ a {
 
         & .icon-close {
             display: block;
+            color: var(--color-fg);
         }
 
         & .icon-menu {
             display: none;
+            color: var(--color-fg);
         }
     }
 
