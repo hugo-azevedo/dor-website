@@ -266,7 +266,7 @@ a {
     background: var(--color-accent);
     border-radius: 50%;
     bottom: 1em;
-    color: var(--color-bg1);
+    color: var(--color-bg2);
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -286,7 +286,7 @@ a {
     }
 
     &:hover {
-        background: rgb(from var(--color-bg1) r g b / 50%);
+        background: #444444;
         
         & .icon-svg {
             color: var(--color-accent);
@@ -782,6 +782,38 @@ a {
     font-weight: var(--font-weight-subheader);
 }
 
+.aspect-ratio-16-9 {
+    aspect-ratio: 16/9;
+}
+
+.ribbon-wrapper {
+    position: relative;
+}
+
+.ribbon {
+  --f: calc(var(--spacing) *1.5); /* control the folded part*/
+  --r: 0px; /* control the ribbon shape */
+  --t: calc(var(--spacing) * 4 ); /* the top offset */
+  
+  position: absolute;
+  inset: var(--t) calc(-1*var(--f)) auto auto;
+  padding: 0 10px var(--f) calc(10px + var(--r));
+  clip-path: 
+    polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
+      calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
+      var(--r) calc(50% - var(--f)/2));
+  background: var(--dor-bronze);
+  color: var(--dor-black);
+  font-weight: var(--font-weight-subheader);
+  box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+}
+
+.new-vocalist {
+    background: var(--color-accent);
+    font-weight: var(--font-weight-header);
+    font-size: 1.25em;
+}
+
 /*** Media queries ***/
 
 @media (max-width: 40em) {
@@ -844,7 +876,7 @@ a {
         transform: translateZ(0);
 
         &:hover .icon-svg {
-            /* color: var(--color-accent); */
+            color: var(--color-accent);
             color: var(--color-fg);
         }
 
