@@ -790,6 +790,11 @@ a {
     position: relative;
 }
 
+.spotify-ribbon-wrapper {
+    position: relative;
+    height: 2em;
+}
+
 .ribbon {
   --f: calc(var(--spacing) *1.5); /* control the folded part*/
   --r: 0px; /* control the ribbon shape */
@@ -806,6 +811,17 @@ a {
   color: var(--dor-black);
   font-weight: var(--font-weight-subheader);
   box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+}
+
+.ribbon-on-spotify {
+    /* inset: calc(-1*var(--f)) var(--t) auto auto; */
+    --t: calc(var(--spacing) * 13 ); /* the top offset */
+    font-size: 0.75em;
+
+    &.adam-ribbon {
+        background: var(--color-accent);
+        --t: calc(var(--spacing) * 9 ); /* the top offset */
+    }
 }
 
 .new-vocalist {
