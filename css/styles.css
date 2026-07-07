@@ -230,7 +230,7 @@ html {
 }
 
 body {
-    background: var(--color-bg1);
+    background: black;
     color: var(--color-fg);
     font-family: var(--font-family-site);
     font-variant-numeric: lining-nums;
@@ -827,12 +827,10 @@ a {
 
         & .icon-close {
             display: block;
-            color: var(--color-fg);
         }
 
         & .icon-menu {
             display: none;
-            color: var(--color-fg);
         }
     }
 
@@ -846,7 +844,8 @@ a {
         transform: translateZ(0);
 
         &:hover .icon-svg {
-            color: var(--color-accent);
+            /* color: var(--color-accent); */
+            color: var(--color-fg);
         }
 
         & .icon-close {
