@@ -22,6 +22,8 @@
     --nav-main-item-height: 2em;
     --nav-main-width: 70vw;
 
+    --section-padding: calc(var(--spacing) * 2);
+
     /* OLD STUFF */
     /* --color-accent: #ffb633; */
     /* --color-accent: #cf6520; */
@@ -383,10 +385,19 @@ a {
     margin: 0 auto;
     /* margin-bottom: 150px; */
     max-width: 60em;
-    padding: 1em 1em;
+    padding: var(--section-padding);
 
     &.is-centered {
         text-align: center;
+    }
+
+    & .negate-section-padding {
+        margin-inline: calc(var(--section-padding) * -1);
+        margin-bottom: calc(var(--section-padding) * -1);
+        img {
+            display: block;
+            width: 100%;
+        }
     }
 
     a.sm-icon {
@@ -427,6 +438,8 @@ a {
         padding: 2em;
     }
 }
+
+
 
 /* Margins */
 

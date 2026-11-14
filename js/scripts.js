@@ -46,7 +46,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 /* Back to top button */
-
 const linkToTop = document.querySelector('.link-to-top');
 
 if (linkToTop) {
