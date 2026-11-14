@@ -391,13 +391,18 @@ a {
         text-align: center;
     }
 
-    & .negate-section-padding {
+    & .negate-section-padding-top,
+    & .negate-section-padding-bottom {
         margin-inline: calc(var(--section-padding) * -1);
         margin-bottom: calc(var(--section-padding) * -1);
         img {
             display: block;
             width: 100%;
         }
+    }
+
+    & .negate-section-padding-top {
+        margin-top: calc(var(--section-padding) * -1);   
     }
 
     a.sm-icon {
